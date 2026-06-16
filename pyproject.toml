@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "warden-agent-audit"
+version = "0.1.0"
+description = "Dependency-light agent behavior audit SDK for intent, action ledgers, scope policy, and reviewable findings."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Zain Dana Harper" }]
+keywords = ["ai-safety", "agent-ops", "audit", "provenance", "guardrails"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "pytest>=8.0"]
+
+[project.scripts]
+warden-agent-audit = "warden_agent_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

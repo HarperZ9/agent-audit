@@ -1,0 +1,11 @@
+include AGENTS.md
+include .dockerignore
+include .env.example
+include .gitignore
+include README.md
+include RELEASE_NOTES.md
+include pyproject.toml
+recursive-include fixtures *.json *.jsonl
+recursive-include project-docs *.md
+recursive-include scripts *.py
+recursive-include tests *.py

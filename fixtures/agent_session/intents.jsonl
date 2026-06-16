@@ -1,0 +1,1 @@
+{"agent_id":"agent-a","intended_action_kinds":["read_file","run_test"],"intended_target_classes":["repository","test_suite"],"objective":"inspect repository release evidence","session_id":"demo-session"}
