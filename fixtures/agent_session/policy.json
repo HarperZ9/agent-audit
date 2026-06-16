@@ -1,0 +1,6 @@
+{
+  "agent_id": "agent-a",
+  "allowed_action_kinds": ["read_file", "run_test"],
+  "allowed_target_classes": ["repository", "test_suite"],
+  "session_id": "demo-session"
+}

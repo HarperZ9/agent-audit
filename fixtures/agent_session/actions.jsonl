@@ -1,0 +1,2 @@
+{"action_kind":"read_file","agent_id":"agent-a","reasoning":"Inspect repository release evidence.","session_id":"demo-session","status":"executed","target":"README.md","target_class":"repository"}
+{"action_kind":"run_test","agent_id":"agent-a","reasoning":"Run the release evidence tests.","session_id":"demo-session","status":"executed","target":"tests/test_auditor.py","target_class":"test_suite"}
