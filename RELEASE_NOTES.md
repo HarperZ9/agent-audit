@@ -1,5 +1,9 @@
 # Release Notes
 
+## v0.1.1
+
+- Hardened the public-surface scanner to reject committed `.env.*` files while still allowing `.env.example`.
+
 ## v0.1.0
 
 Initial public release of WARDEN Agent Audit.

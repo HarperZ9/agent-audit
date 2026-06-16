@@ -50,8 +50,8 @@ def main() -> int:
             failures.append(f"missing required file: {required}")
     for path in iter_files():
         rel = path.relative_to(ROOT).as_posix()
-        if path.name == ".env":
-            failures.append("committed .env file is not allowed")
+        if path.name == ".env" or (path.name.startswith(".env.") and path.name != ".env.example"):
+            failures.append(f"committed environment file is not allowed: {rel}")
         if path.suffix not in TEXT_SUFFIXES and path.name != ".gitignore":
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
