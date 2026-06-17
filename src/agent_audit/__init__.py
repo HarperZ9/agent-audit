@@ -1,4 +1,4 @@
-"""Public WARDEN Agent Audit package."""
+"""Public Agent Audit package."""
 from __future__ import annotations
 
 from .auditor import AgentAuditor

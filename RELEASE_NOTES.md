@@ -6,7 +6,7 @@
 
 ## v0.1.0
 
-Initial public release of WARDEN Agent Audit.
+Initial public release of Agent Audit.
 
 - Intent declarations for agent sessions
 - Action ledger model with status, reasoning, parameters, and evidence references

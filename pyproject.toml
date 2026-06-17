@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "warden-agent-audit"
+name = "agent-audit"
 version = "0.1.1"
 description = "Dependency-light agent behavior audit SDK for intent, action ledgers, scope policy, and reviewable findings."
 readme = "README.md"
@@ -23,7 +23,7 @@ dependencies = []
 dev = ["build>=1.2", "pytest>=8.0"]
 
 [project.scripts]
-warden-agent-audit = "warden_agent_audit.cli:main"
+agent-audit = "agent_audit.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

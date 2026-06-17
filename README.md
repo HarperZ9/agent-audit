@@ -1,6 +1,6 @@
-# WARDEN Agent Audit
+# Agent Audit
 
-WARDEN Agent Audit is a dependency-light public package for reviewing AI-agent work. It records declared intent, action ledgers, scope policy, detector findings, and handoff reports without depending on private WARDEN infrastructure.
+Agent Audit is a dependency-light public package for reviewing AI-agent work. It records declared intent, action ledgers, scope policy, detector findings, and handoff reports.
 
 The package is built for local review loops:
 
@@ -19,10 +19,10 @@ python -m pip install -e .[dev]
 ## Run
 
 ```powershell
-warden-agent-audit demo --out-dir out
-warden-agent-audit audit --intents fixtures/agent_session/intents.jsonl --actions fixtures/agent_session/actions.jsonl --policy fixtures/agent_session/policy.json --json-out out/report.json --md-out out/report.md
+agent-audit demo --out-dir out
+agent-audit audit --intents fixtures/agent_session/intents.jsonl --actions fixtures/agent_session/actions.jsonl --policy fixtures/agent_session/policy.json --json-out out/report.json --md-out out/report.md
 ```
 
 ## Boundary
 
-This is a public-safe extraction. It does not publish private operations, private corpora, session transcripts, client data, provider integrations, or private WARDEN policy material. Examples use synthetic repository-review actions only.
+Examples are synthetic. The package ships only synthetic repository-review actions and does not include any private operational data.

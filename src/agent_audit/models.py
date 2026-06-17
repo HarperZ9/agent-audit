@@ -202,7 +202,7 @@ class AuditFinding:
 class AuditReport:
     action_count: int
     findings: tuple[AuditFinding, ...]
-    schema: str = "warden-agent-audit.report.v1"
+    schema: str = "agent-audit.report.v1"
 
     @property
     def critical_count(self) -> int:

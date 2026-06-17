@@ -37,7 +37,7 @@ def write_json_report(report: AuditReport, path: Path) -> None:
 
 def render_markdown(report: AuditReport) -> str:
     lines = [
-        "# WARDEN Agent Audit",
+        "# Agent Audit",
         "",
         f"- Actions audited: {report.action_count}",
         f"- Critical findings: {report.critical_count}",

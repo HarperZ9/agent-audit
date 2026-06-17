@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from warden_agent_audit import (
+from agent_audit import (
     ActionStatus,
     AgentAction,
     AgentAuditor,
@@ -105,7 +105,7 @@ def test_report_serializes_to_stable_json_shape() -> None:
     report = auditor.audit_actions([_action()])
     payload = report.to_dict()
 
-    assert payload["schema"] == "warden-agent-audit.report.v1"
+    assert payload["schema"] == "agent-audit.report.v1"
     assert payload["action_count"] == 1
     assert payload["critical_count"] == 0
     assert payload["findings"] == []

@@ -67,7 +67,7 @@ def test_cli_audit_writes_json_and_markdown(tmp_path: Path) -> None:
         [
             sys.executable,
             "-m",
-            "warden_agent_audit",
+            "agent_audit",
             "audit",
             "--intents",
             str(intents),
@@ -92,7 +92,7 @@ def test_cli_audit_writes_json_and_markdown(tmp_path: Path) -> None:
     payload = json.loads(report.read_text(encoding="utf-8"))
     assert payload["action_count"] == 1
     assert payload["critical_count"] == 0
-    assert "WARDEN Agent Audit" in markdown.read_text(encoding="utf-8")
+    assert "Agent Audit" in markdown.read_text(encoding="utf-8")
 
 
 def test_cli_demo_emits_report(tmp_path: Path) -> None:
@@ -100,7 +100,7 @@ def test_cli_demo_emits_report(tmp_path: Path) -> None:
         [
             sys.executable,
             "-m",
-            "warden_agent_audit",
+            "agent_audit",
             "demo",
             "--out-dir",
             str(tmp_path),
