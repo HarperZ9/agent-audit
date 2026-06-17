@@ -1,6 +1,6 @@
 # Public Boundary
 
-WARDEN Agent Audit publishes a neutral behavior-audit primitive for AI-agent workflows.
+Agent Audit publishes a neutral behavior-audit primitive for AI-agent workflows.
 
 Public:
 - intent declarations
@@ -11,10 +11,8 @@ Public:
 - synthetic fixtures
 
 Private:
-- private WARDEN operations
-- private policy corpus
-- provider integrations
 - client data
 - session transcripts
-- private runbooks
 - non-synthetic evidence
+
+Examples are synthetic.

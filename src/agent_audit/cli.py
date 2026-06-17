@@ -98,7 +98,7 @@ def _cmd_demo(args: argparse.Namespace) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="warden-agent-audit",
+        prog="agent-audit",
         description="Audit AI-agent intent, action ledgers, and scope policy.",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
