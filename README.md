@@ -1,5 +1,23 @@
 # Agent Audit
 
+<p align="center">
+  <img src="docs/brand/agent-audit-hero.png" alt="Agent Audit, check agent work against declared scope">
+</p>
+
+> Check agent work against declared scope.
+
+## Why it matters
+
+Agent runs are hard to review when intent, actions, and policy live in different places. Agent Audit puts them side by side and reports drift, scope violations, and unsupported prior-work claims as a reviewable artifact.
+
+## What to test first
+
+- Run the demo and inspect both the JSON and Markdown reports.
+- Change a fixture action so it violates policy and confirm the report names the violation.
+- Remove evidence for a claimed prior step and confirm it is flagged instead of accepted.
+
+## Technical framing
+
 > Audit an AI-agent session — declared intent + action ledger vs. a scope policy; flags drift, scope violations, and unbacked prior-work claims.
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
