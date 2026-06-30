@@ -3,12 +3,12 @@
 Agent Audit compares a declared agent **intent** plus an **action ledger**
 against a **scope policy**, and emits findings for three classes of problem:
 
-- `intent_drift` — an action diverges from the declared intent for its
+- `intent_drift` -- an action diverges from the declared intent for its
   `(agent_id, session_id)`.
-- `scope_policy` — an action violates an attached scope policy (denied or
+- `scope_policy` -- an action violates an attached scope policy (denied or
   not-allowed action kind / target class, a denied target, or the session
   action limit).
-- `claimed_history` — an action's `reasoning` asserts prior work (e.g.
+- `claimed_history` -- an action's `reasoning` asserts prior work (e.g.
   "I previously…", "I have completed…") that is not backed by earlier
   actions in the ledger.
 
@@ -34,7 +34,7 @@ agent-audit audit  --intents PATH --actions PATH --json-out PATH
 agent-audit demo   --out-dir PATH
 ```
 
-`audit` flags (exactly these — no others exist):
+`audit` flags (exactly these -- no others exist):
 
 | Flag                | Required | Type | Meaning                                              |
 | ------------------- | -------- | ---- | ---------------------------------------------------- |
@@ -52,7 +52,7 @@ finding.
 The `audit` command also prints a one-line JSON summary to stdout, e.g.
 `{"actions": 2, "critical": 0, "warnings": 0}`.
 
-### Example 1 — audit the bundled synthetic fixtures (clean session)
+### Example 1 -- audit the bundled synthetic fixtures (clean session)
 
 ```powershell
 agent-audit audit `
@@ -93,7 +93,7 @@ Stdout:
 No findings were emitted.
 ```
 
-### Example 2 — a session with scope and drift violations
+### Example 2 -- a session with scope and drift violations
 
 `intents.jsonl` (one JSON object per line):
 
@@ -128,7 +128,7 @@ Stdout (and the process exits `1` because of `--fail-on-critical`):
 {"actions": 2, "critical": 2, "warnings": 0}
 ```
 
-The second action trips two detectors — it both diverges from the declared
+The second action trips two detectors -- it both diverges from the declared
 intent (`publish_package`/`package_registry` was never declared) and breaks
 the scope policy (kind and class not allowed, target denied). The Markdown
 report:
@@ -151,7 +151,7 @@ report:
 > this session the offending action already has a prior action recorded. See
 > Example 3 for a claim that is flagged.
 
-### Example 3 — write a synthetic demo report
+### Example 3 -- write a synthetic demo report
 
 ```powershell
 agent-audit demo --out-dir out
@@ -179,7 +179,7 @@ from agent_audit import (
 )
 ```
 
-### Example 4 — audit a session in code
+### Example 4 -- audit a session in code
 
 ```python
 from agent_audit import (

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "agent-audit"
 version = "0.1.1"
-description = "Audit an AI-agent session — declared intent + action ledger vs. a scope policy; flags drift, scope violations, and unbacked prior-work claims."
+description = "Audit an AI-agent session -- declared intent + action ledger vs. a scope policy; flags drift, scope violations, and unbacked prior-work claims."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

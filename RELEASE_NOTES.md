@@ -1,5 +1,10 @@
 # Release Notes
 
+## 2026-06-29
+
+- Updated CI to current `actions/checkout` and `actions/setup-python` majors.
+- Normalized scanner-blocking dash punctuation in public docs and examples.
+
 ## v0.1.1
 
 - Hardened the public-surface scanner to reject committed `.env.*` files while still allowing `.env.example`.

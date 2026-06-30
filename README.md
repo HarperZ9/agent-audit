@@ -18,7 +18,7 @@ Agent runs are hard to review when intent, actions, and policy live in different
 
 ## Technical framing
 
-> Audit an AI-agent session — declared intent + action ledger vs. a scope policy; flags drift, scope violations, and unbacked prior-work claims.
+> Audit an AI-agent session -- declared intent + action ledger vs. a scope policy; flags drift, scope violations, and unbacked prior-work claims.
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
@@ -59,7 +59,7 @@ examples with expected output, and a runnable script under
 Examples are synthetic. The package ships only synthetic repository-review actions and does not include any private operational data.
 
 ---
-**Zain Dana Harper** — small tools with explicit edges.
+**Zain Dana Harper** -- small tools with explicit edges.
 [Portfolio](https://harperz9.github.io) · [HarperZ9](https://github.com/HarperZ9)
 <sub>Built with Claude Code; reviewed, tested, and owned by me.</sub>
 
