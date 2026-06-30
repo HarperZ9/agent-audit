@@ -1,4 +1,4 @@
-"""Best-effort demo — not runtime-verified by author.
+"""Best-effort demo -- not runtime-verified by author.
 
 End-to-end walk-through of the public Agent Audit API.
 
