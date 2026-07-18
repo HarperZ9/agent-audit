@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/assets/zentropy-banner.png" alt="agent-audit" width="100%"></p>
+
 # Agent Audit
 
 <p align="center">
@@ -71,3 +73,7 @@ Keep the public README, package metadata, and examples aligned with current beha
 python -m pip install -e ".[test]"
 python -m pytest
 ```
+
+---
+
+**[Zentropy Labs](https://github.com/ZentropyLabs-ai)** · order out of entropy. An independent lab building evidence-first tools that leave a re-checkable artifact behind. Built by Zain Dana Harper in Seattle. The full workbench is at [Project Telos](https://harperz9.github.io).
