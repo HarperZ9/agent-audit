@@ -1,5 +1,3 @@
-<p align="center"><img src=".github/assets/zentropy-banner.png" alt="agent-audit" width="100%"></p>
-
 # Agent Audit
 
 <p align="center">
@@ -76,4 +74,4 @@ python -m pytest
 
 ---
 
-**[Zentropy Labs](https://github.com/ZentropyLabs-ai)** · order out of entropy. An independent lab building evidence-first tools that leave a re-checkable artifact behind. Built by Zain Dana Harper in Seattle. The full workbench is at [Project Telos](https://harperz9.github.io).
+**[Zain Dana Harper](https://github.com/HarperZ9)** · order out of entropy. Evidence-first tools that leave a re-checkable artifact behind, built in Seattle. The full workbench is at [Project Telos](https://harperz9.github.io).
